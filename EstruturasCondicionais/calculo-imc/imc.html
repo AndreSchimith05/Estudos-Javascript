@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+</head>
+<body>
+    <h1>Calculo IMC</h1>
+    <script>
+        let peso = Number(prompt("Digite seu peso: "));
+        let altura = Number(prompt("Digite sua altura em centimetros: (ex: 178cm, 190cm)"));
+        let alturaEmMt = altura / 100;
+        let alturaEmDobro = alturaEmMt * alturaEmMt
+        let imc = peso / alturaEmDobro
+
+        if(imc < 18.5){
+            alert("Seu IMC é: " + imc.toFixed(2) + " você está abaixo do peso")
+        }
+        else if(imc <= 24.9){
+            alert("Seu IMC é: " + imc.toFixed(2) + " Você está com peso normal")
+        }
+        else if(imc <= 29.9){
+            alert("Seu IMC é: " + imc.toFixed(2) + " Você está com sobrepeso")
+        }
+        else if(imc <= 34.9){
+            alert("Seu IMC é: " + imc.toFixed(2) + " Você está com obesidade grau I")
+        }
+        else if(imc <= 39.9){
+            alert("Seu IMC é: " + imc.toFixed(2) + " Você está com obesidade grau II")
+        }
+        else{
+            alert("Seu IMC é: " + imc.toFixed(2) + " Você está com obesidade grau III")
+        }
+    </script>
+</body>
+</html>

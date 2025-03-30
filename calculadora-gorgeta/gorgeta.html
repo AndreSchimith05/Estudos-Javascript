@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeta</title>
+</head>
+<body>
+    <h1>Calculadora de gorgeta</h1>
+    <script>
+        let conta = parseFloat(prompt("Digite o valor da sua conta: "));
+        let gorgeta = parseFloat(prompt("Digite a porcentagem da sua gorgeta: "))
+
+        let contaFinal = conta / (1 - (gorgeta / 100))
+
+        alert("Sua conta com acréscimo de " + gorgeta + "% da gorgeta ficou um total de: " + contaFinal.toFixed(2))
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação</title>
+</head>
+<body>
+    <h1> Verifique se você pode dirigir </h1>
+    <script>
+        const nome = prompt("Digite seu nome: ");
+        let idade = Number(prompt("Digite sua idade: "));
+        let carteiraMotorista = prompt("Você possui carteira de motorista? (sim/não)").toLowerCase();
+
+        if (idade >= 18 && carteiraMotorista === "sim"){
+            alert(nome + ", você pode dirigir.")
+        }
+        else{
+            alert(nome + ", você não pode dirigir.")
+        }
+    </script>
+</body>
+</html>
